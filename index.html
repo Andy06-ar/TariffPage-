@@ -3,10 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Empresa Soluciones S.A. - Identidad Corporativa</title>
+    <title>Blueberry Notes — Papelería online</title>
     <meta
       name="description"
-      content="Nuestra identidad corporativa: visión, misión, valores y contacto."
+      content="Blueberry Notes: papelería online con diseños suaves, inspiración y calma para tu día a día."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -19,62 +25,36 @@
 
     <header class="site-header" role="banner">
       <div class="container header-inner">
-        <a class="brand" href="#inicio" aria-label="Empresa Soluciones S.A. (Ir al inicio)">
-          <span class="brand-mark" aria-hidden="true">
-            <!-- Marca simple inspirada en el logotipo (vector en línea). -->
-            <svg
-              width="44"
-              height="44"
-              viewBox="0 0 64 64"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17 18.5C23 12.5 33.5 10.5 41.5 14.5C50.2 18.8 52.5 29.5 46.8 36.9C40.8 44.7 28.9 44.1 24 35.9C20.2 29.5 22.2 21.5 28.5 18.5"
-                stroke="currentColor"
-                stroke-width="3.2"
-                stroke-linecap="round"
-              />
-              <path
-                d="M18.5 31.5C24.2 40.7 36.6 41.4 44.2 33.8"
-                stroke="currentColor"
-                stroke-width="3.2"
-                stroke-linecap="round"
-              />
-              <path
-                d="M22.8 23.2L17.2 18.2L25.7 17.3"
-                stroke="currentColor"
-                stroke-width="3.2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M41 46.8L46.8 50.4L42.4 43"
-                stroke="currentColor"
-                stroke-width="3.2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </span>
-          <span class="brand-text">
-            <span class="brand-title">Tariff Shield Consulting Group</span>
-          </span>
+        <nav class="nav-side nav-side--left" aria-label="Navegación izquierda">
+          <ul class="nav-links">
+            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="#identidad" class="nav-link">Identidad</a></li>
+          </ul>
+        </nav>
+
+        <a class="brand" href="#inicio" aria-label="Blueberry Notes — Inicio">
+          <span class="brand-badge" aria-hidden="true">🫐</span>
+          <span class="brand-name">Blueberry Notes</span>
         </a>
 
-        <!-- Menú responsive sin JavaScript (checkbox hack). -->
+        <nav class="nav-side nav-side--right" aria-label="Navegación derecha">
+          <ul class="nav-links">
+            <li><a href="#nosotros" class="nav-link">Quiénes somos</a></li>
+            <li><a href="#productos" class="nav-link">Qué vendemos</a></li>
+          </ul>
+        </nav>
+
         <input type="checkbox" id="nav-check" class="nav-check" />
         <label for="nav-check" class="nav-toggle" aria-label="Abrir y cerrar menú">
           <span class="nav-toggle-bar" aria-hidden="true"></span>
-          <span class="nav-toggle-text">Menú</span>
         </label>
 
-        <nav class="nav" aria-label="Navegación principal">
-          <ul class="nav-links" id="primary-nav">
+        <nav class="nav-mobile" aria-label="Menú móvil">
+          <ul class="nav-links nav-links--stack">
             <li><a href="#inicio" class="nav-link">Inicio</a></li>
-            <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-            <li><a href="#servicios" class="nav-link">Servicios</a></li>
-            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            <li><a href="#identidad" class="nav-link">Identidad</a></li>
+            <li><a href="#nosotros" class="nav-link">Quiénes somos</a></li>
+            <li><a href="#productos" class="nav-link">Qué vendemos</a></li>
           </ul>
         </nav>
       </div>
@@ -82,20 +62,33 @@
 
     <main id="contenido">
       <section class="hero" id="inicio">
-        <div class="container hero-inner">
-          <div class="hero-title-row animate__animated animate__fadeInUp">
-            <img
-              class="hero-main-logo"
-              src="./img/image.png"
-              alt="Logo de Empresa Soluciones S.A."
-            />
-            <h1>Nuestra Identidad Corporativa</h1>
+        <div class="container">
+          <div class="hero-card">
+            <div class="hero-visual" aria-hidden="true">
+              <div class="hero-cloud hero-cloud--1"></div>
+              <div class="hero-cloud hero-cloud--2"></div>
+              <span class="hero-emoji">📒✨</span>
+            </div>
+            <div class="hero-copy">
+              <h1 class="animate__animated animate__fadeInUp">
+                Papelería que despierta tu creatividad cotidiana.
+              </h1>
+              <p class="hero-tagline animate__animated animate__fadeInUp reveal-delay-1">
+                Tonos arándano, lilas y blancos — frescura y tranquilidad en cada detalle.
+              </p>
+              <a href="#identidad" class="btn btn-pill animate__animated animate__fadeInUp reveal-delay-2"
+                >Descubrir colecciones</a
+              >
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="about" id="nosotros">
+      <section class="section section--identity about" id="identidad">
         <div class="container">
+          <h2 class="section-title">Nuestra esencia</h2>
+          <p class="section-lead">Visión, misión y el objetivo que nos guía cada día.</p>
+
           <div class="info-grid">
             <article class="info-card">
               <div class="info-icon" aria-hidden="true">
@@ -110,7 +103,9 @@
               </div>
               <h3 class="animate__animated animate__fadeInUp reveal-delay-1">Visión</h3>
               <p class="animate__animated animate__fadeInUp reveal-delay-1">
-                Ser la empresa líder nacional en asesoría en clasificación arancelaria, reconocida por su profesionalismo y trato cercano.
+                Ser el rincón de papelería online favorito para quienes buscan dulzura e inspiración en su día a día,
+                convirtiendo cada apunte, idea y proyecto en una experiencia fresca, creativa y tan serena como un cielo
+                despejado.
               </p>
             </article>
 
@@ -127,159 +122,90 @@
               </div>
               <h3 class="animate__animated animate__fadeInUp reveal-delay-2">Misión</h3>
               <p class="animate__animated animate__fadeInUp reveal-delay-2">
-                Brindar asesoría en clasificación arancelaria para operaciones de comercio exterior, ofreciendo análisis técnicos que aseguren el cumplimiento normativo y optimicen procesos de importación y exportación, con atención profesional y cercana.
+                Ofrecer artículos de papelería con diseños suaves, funcionales y de alta calidad que acompañen a
+                nuestros clientes en su organización diaria. Buscamos brindar herramientas que estimulen la creatividad,
+                aportando un toque de magia y calma a cada escritorio.
               </p>
             </article>
 
-            <article class="info-card values-card">
+            <article class="info-card">
               <div class="info-icon" aria-hidden="true">
                 <img
                   class="info-icon-img"
-                  src="https://cdn-icons-gif.flaticon.com/6454/6454236.gif"
-                  onerror="this.onerror=null;this.src='https://cdn-icons-png.flaticon.com/512/6454/6454236.png';"
+                  src="https://cdn-icons-gif.flaticon.com/4712/4712008.gif"
+                  onerror="this.onerror=null;this.src='https://cdn-icons-png.flaticon.com/512/4712/4712008.png';"
                   alt=""
                   loading="lazy"
                   decoding="async"
                 />
               </div>
-              <h3 class="animate__animated animate__fadeInUp reveal-delay-3">Nuestros Valores</h3>
-              <ul class="values-list animate__animated animate__fadeInUp reveal-delay-3">
-                <li>Responsabilidad: Clasificaciones correctas para operaciones seguras.</li>
-                <li>Honestidad: Transparencia y cumplimiento normativo.</li>
-                <li>Amabilidad: Atención cordial y respetuosa.</li>
-                <li>Empatía: Soluciones adaptadas a cada cliente.</li>
-                <li>Respeto: Estricto apego a normas y transparencia.</li>
-              </ul>
+              <h3 class="animate__animated animate__fadeInUp reveal-delay-3">Objetivo</h3>
+              <p class="animate__animated animate__fadeInUp reveal-delay-3">
+                Convertirnos en la marca de confianza para estudiantes, profesionales y mentes creativas, expandiendo
+                continuamente nuestro catálogo de productos exclusivos inspirados en una estética relajante, y
+                garantizando una experiencia de compra online intuitiva, rápida y encantadora.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Ancla para el enlace del menú ("Servicios"). -->
-      <section id="servicios" class="services-anchor" aria-hidden="true"></section>
+      <section class="section section--story" id="nosotros">
+        <div class="container">
+          <article class="story-card">
+            <div class="story-card__accent" aria-hidden="true">🫐</div>
+            <h2 class="animate__animated animate__fadeInUp">Quiénes somos</h2>
+            <p class="animate__animated animate__fadeInUp reveal-delay-1">
+              En Blueberry Notes somos soñadores apasionados por los pequeños detalles. Nacimos con la convicción de que
+              organizar tu vida y plasmar tus pensamientos debe ser un momento de paz. Somos una papelería digital que
+              fusiona el estilo minimalista con destellos de color y magia, pensada para crear tu espacio de estudio o
+              trabajo ideal.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--products" id="productos">
+        <div class="container">
+          <article class="story-card story-card--alt">
+            <div class="story-card__accent" aria-hidden="true">✏️</div>
+            <h2 class="animate__animated animate__fadeInUp">Qué vendemos</h2>
+            <p class="animate__animated animate__fadeInUp reveal-delay-1">
+              Ofrecemos una cuidada selección de artículos de papelería diseñados para inspirar: libretas de hojas
+              premium, planners minimalistas, bolígrafos de gel, resaltadores y accesorios de escritorio. Todo envuelto
+              en una paleta de tonos arándano, lilas y blancos que transmiten la frescura y tranquilidad de nuestro
+              universo.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <footer class="site-footer" id="contacto" role="contentinfo">
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-decor footer-decor--cloud footer-decor--tl" aria-hidden="true"></div>
+      <div class="footer-decor footer-decor--cloud footer-decor--br" aria-hidden="true"></div>
+      <div class="footer-decor footer-decor--berry footer-decor--bl" aria-hidden="true">🫐</div>
+      <div class="footer-decor footer-decor--berry footer-decor--tr" aria-hidden="true">🫐</div>
+
       <div class="container footer-inner">
-        <div class="footer-brand">
-          <div class="footer-logo" aria-hidden="true">
-            <svg width="40" height="40" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M17 18.5C23 12.5 33.5 10.5 41.5 14.5C50.2 18.8 52.5 29.5 46.8 36.9C40.8 44.7 28.9 44.1 24 35.9C20.2 29.5 22.2 21.5 28.5 18.5"
-                stroke="currentColor"
-                stroke-width="3.2"
-                stroke-linecap="round"
-              />
-              <path
-                d="M18.5 31.5C24.2 40.7 36.6 41.4 44.2 33.8"
-                stroke="currentColor"
-                stroke-width="3.2"
-                stroke-linecap="round"
-              />
-              <path
-                d="M22.8 23.2L17.2 18.2L25.7 17.3"
-                stroke="currentColor"
-                stroke-width="3.2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
+        <nav class="footer-nav" aria-label="Enlaces del pie">
+          <a href="#inicio">Inicio</a>
+          <span class="footer-dot">·</span>
+          <a href="#identidad">Identidad</a>
+          <span class="footer-dot">·</span>
+          <a href="#nosotros">Quiénes somos</a>
+          <span class="footer-dot">·</span>
+          <a href="#productos">Productos</a>
+        </nav>
 
-          <div class="footer-legal">
-            Tariff Shield &copy; 2026. Todos los derechos reservados.
-          </div>
+        <div class="footer-social-row">
+          <a class="social-circle" href="#" aria-label="Instagram">IG</a>
+          <a class="social-circle" href="#" aria-label="Facebook">f</a>
+          <a class="social-circle" href="#" aria-label="Pinterest">P</a>
         </div>
 
-        <div class="footer-contact">
-          <div class="footer-contact-title">CONTACTO</div>
-          <div class="footer-contact-links">
-            <a class="footer-contact-link" href="mailto:contacto@empresasoluciones.com">
-              <span class="footer-contact-icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 20h36v24H14V20z" stroke="currentColor" stroke-width="3" stroke-linejoin="round" />
-                  <path d="M14 22l18 14 18-14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </span>
-              <span>contacto@TariffShield.com</span>
-            </a>
-
-            <a class="footer-contact-link" href="tel:+525512345678">
-              <span class="footer-contact-icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M22 16c6 2 12 8 14 14-2 3-4 4-6 6 2 4 6 8 10 10 2-2 3-4 6-6 6 2 12 8 14 14-4 6-12 8-20 6-16-4-28-16-32-32-2-8 0-16 6-20z"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <span>+52 (55) 1234 5678</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-social">
-          <div class="footer-social-title">SÍGUENOS</div>
-
-          <div class="social-buttons">
-            <a
-              class="social-btn social-btn--linkedin"
-              href="https://linkedin.com/company/TariffShieldConsultingGroup"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="social-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M14 26h10v24H14V26z"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M29 26h9c8 0 12 4 12 12v12H40V40c0-3-1-5-4-5-2 0-3 1-4 2v13H29V26z"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linejoin="round"
-                  />
-                  <path d="M19 14a5 5 0 1 0 0.01 0" stroke="currentColor" stroke-width="3" />
-                </svg>
-              </span>
-              <span class="social-text">
-                <span class="social-name">LinkedIn</span>
-                <span class="social-handle">linkedin.com/company/TariffShield</span>
-              </span>
-            </a>
-
-            <a
-              class="social-btn social-btn--facebook"
-              href="https://facebook.com/TariffShieldConsultingGroup"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="social-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M34 18h10v10H38c0 0-4 0-4 4v8h10l-2 12H34v-12H22V40h12v-8c0-10 8-14 16-14z"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <span class="social-text">
-                <span class="social-name">Facebook</span>
-                <span class="social-handle">facebook.com/TariffShield</span>
-              </span>
-            </a>
-          </div>
-        </div>
+        <p class="footer-copy">Blueberry Notes &copy; 2026. Hecho con calma y creatividad.</p>
       </div>
     </footer>
   </body>
 </html>
-
