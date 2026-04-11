@@ -73,7 +73,7 @@
           <ul class="nav-links" id="primary-nav">
             <li><a href="#inicio" class="nav-link">Inicio</a></li>
             <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-            <li><a href="#servicios" class="nav-link">Servicios</a></li>
+            <li><a href="#precios" class="nav-link">Precios</a></li>
             <li><a href="#contacto" class="nav-link">Contacto</a></li>
           </ul>
         </nav>
@@ -81,15 +81,46 @@
     </header>
 
     <main id="contenido">
+      <section class="sucursal-banner" id="sucursal" aria-labelledby="sucursal-heading">
+        <div class="container sucursal-banner__inner">
+          <figure class="sucursal-banner__figure">
+            <img
+              class="sucursal-banner__img"
+              src="./img/ubicacionTariff.jpeg"
+              width="640"
+              height="360"
+              alt="Vista de la sucursal en Angelópolis"
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
+          <div class="sucursal-banner__content">
+            <h2 id="sucursal-heading" class="sucursal-banner__title">Conoce nuestra sucursal en Angelópolis</h2>
+          </div>
+        </div>
+      </section>
+
       <section class="hero" id="inicio">
         <div class="container hero-inner">
-          <div class="hero-title-row animate__animated animate__fadeInUp">
-            <img
-              class="hero-main-logo"
-              src="./img/image.png"
-              alt="Logo de Empresa Soluciones S.A."
-            />
-            <h1>Nuestra Identidad Corporativa</h1>
+          <div class="hero-layout">
+            <div class="hero-title-row animate__animated animate__fadeInUp">
+              <img
+                class="hero-main-logo"
+                src="./img/image.png"
+                alt="Logo de Empresa Soluciones S.A."
+              />
+              <h1>Nuestra Identidad Corporativa</h1>
+            </div>
+            <figure class="hero-side-visual">
+              <img
+                src="./img/tariff.jpeg"
+                alt="Instalaciones y ambiente corporativo"
+                width="520"
+                height="340"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
           </div>
         </div>
       </section>
@@ -155,8 +186,100 @@
         </div>
       </section>
 
-      <!-- Ancla para el enlace del menú ("Servicios"). -->
-      <section id="servicios" class="services-anchor" aria-hidden="true"></section>
+      <section class="media-highlight" aria-labelledby="equipo-heading">
+        <div class="container media-highlight__inner">
+          <figure class="media-highlight__figure">
+            <img
+              src="./img/empleados.jpeg"
+              alt="Equipo de Empresa Soluciones S.A."
+              width="560"
+              height="360"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div class="media-highlight__text">
+            <h2 id="equipo-heading" class="media-highlight__title">Profesionales a tu servicio</h2>
+            <p class="media-highlight__lead">
+              Un equipo comprometido con la excelencia en clasificación arancelaria y comercio exterior, listo para
+              acompañarte en cada operación.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="precios" aria-labelledby="precios-heading">
+        <div class="container">
+          <header class="pricing__header">
+            <h2 id="precios-heading" class="pricing__title">Precio</h2>
+            <p class="pricing__intro">
+              La evaluación inicial es gratuita, ya que permite identificar las necesidades del cliente antes de asignar
+              un servicio específico.
+            </p>
+          </header>
+
+          <div class="pricing-grid">
+            <article class="price-card">
+              <h3 class="price-card__name">Clasificación Arancelaria Básica <span class="price-card__scope">(por producto)</span></h3>
+              <p class="price-card__amount">$1,400 <span class="price-card__currency">MXN</span></p>
+              <p class="price-card__label">Incluye:</p>
+              <ul class="price-card__list">
+                <li>Análisis de características del producto</li>
+                <li>Determinación de fracción arancelaria</li>
+                <li>Aplicación de reglas generales</li>
+                <li>Entrega de resultados</li>
+              </ul>
+            </article>
+
+            <article class="price-card">
+              <h3 class="price-card__name">Clasificación Técnica Especializada <span class="price-card__scope">(producto complejo)</span></h3>
+              <p class="price-card__amount">$2,900 <span class="price-card__currency">MXN</span></p>
+              <p class="price-card__label">Incluye:</p>
+              <ul class="price-card__list">
+                <li>Análisis técnico profundo</li>
+                <li>Revisión de composición, uso y función</li>
+                <li>Investigación de normativas aplicables</li>
+                <li>Aplicación de criterios especializados</li>
+              </ul>
+            </article>
+
+            <article class="price-card">
+              <h3 class="price-card__name">Dictamen Técnico Documentado</h3>
+              <p class="price-card__amount">$5,200 <span class="price-card__currency">MXN</span></p>
+              <p class="price-card__label">Incluye:</p>
+              <ul class="price-card__list">
+                <li>Documento formal de clasificación arancelaria</li>
+                <li>Justificación legal y técnica completa</li>
+                <li>Soporte documental para auditorías o autoridades</li>
+              </ul>
+            </article>
+
+            <article class="price-card">
+              <h3 class="price-card__name">Asesoría Integral en Comercio Exterior <span class="price-card__scope">(por hora)</span></h3>
+              <p class="price-card__amount">$1,300 <span class="price-card__currency">MXN</span></p>
+              <p class="price-card__label">Incluye:</p>
+              <ul class="price-card__list">
+                <li>Consultoría personalizada</li>
+                <li>Resolución de dudas en tiempo real</li>
+                <li>Estrategias de importación y exportación</li>
+                <li>Revisión de operaciones</li>
+              </ul>
+            </article>
+
+            <article class="price-card price-card--featured">
+              <h3 class="price-card__name">Plan Mensual para Empresas</h3>
+              <p class="price-card__amount">$12,500 <span class="price-card__currency">MXN</span></p>
+              <p class="price-card__label">Incluye:</p>
+              <ul class="price-card__list">
+                <li>Asesoría continua</li>
+                <li>Consultas ilimitadas dentro del horario laboral</li>
+                <li>Apoyo en múltiples productos</li>
+                <li>Seguimiento de operaciones</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer" id="contacto" role="contentinfo">
