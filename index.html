@@ -81,46 +81,150 @@
     </header>
 
     <main id="contenido">
-      <section class="sucursal-banner" id="sucursal" aria-labelledby="sucursal-heading">
-        <div class="container sucursal-banner__inner">
-          <figure class="sucursal-banner__figure">
-            <img
-              class="sucursal-banner__img"
-              src="./img/ubicacionTariff.jpeg"
-              width="640"
-              height="360"
-              alt="Vista de la sucursal en Angelópolis"
-              loading="eager"
-              decoding="async"
-            />
-          </figure>
-          <div class="sucursal-banner__content">
-            <h2 id="sucursal-heading" class="sucursal-banner__title">Conoce nuestra sucursal en Angelópolis</h2>
+      <section class="main-banner" id="sucursal" aria-labelledby="sucursal-heading">
+        <div class="main-banner__media">
+          <img
+            class="main-banner__img"
+            src="./img/bannerTariff.jpeg"
+            width="1920"
+            height="640"
+            alt="Instalaciones Tariff Shield en Angelópolis"
+            loading="eager"
+            decoding="async"
+          />
+          <div class="main-banner__overlay" aria-hidden="true"></div>
+        </div>
+        <div class="container main-banner__content">
+          <div class="main-banner__primary">
+            <h2 id="sucursal-heading" class="main-banner__title">Conoce nuestra sucursal en Angelópolis</h2>
+            <ul class="main-banner__checks">
+              <li>Consultoría</li>
+              <li>Clasificación</li>
+              <li>Estrategia comercial</li>
+            </ul>
+          </div>
+          <aside class="main-banner__glass" aria-label="Resumen de servicios">
+            <p class="main-banner__glass-brand">Tariff Shield</p>
+            <ul class="main-banner__glass-list">
+              <li>Consultoría</li>
+              <li>Clasificación</li>
+              <li>Estrategia comercial</li>
+            </ul>
+            <a class="main-banner__cta" href="#contacto">Agendar tour virtual</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="facility-section" id="instalaciones" aria-labelledby="facility-heading">
+        <div class="container">
+          <h2 id="facility-heading" class="facility-section__heading">Nuestras instalaciones</h2>
+          <div class="facility-grid">
+            <article class="facility-card">
+              <figure class="facility-card__media">
+                <img src="./img/recepcion.jpeg" alt="Recepción premium" loading="lazy" decoding="async" />
+              </figure>
+              <div class="facility-card__body">
+                <h3 class="facility-card__title">Recepción premium</h3>
+                <p class="facility-card__desc">Diseño elegante y atención de clase mundial.</p>
+                <span class="facility-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8" />
+                    <path d="M8 3v4M16 3v4M3 11h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                  </svg>
+                </span>
+              </div>
+            </article>
+
+            <article class="facility-card">
+              <figure class="facility-card__media">
+                <img src="./img/saladejuntas.jpeg" alt="Sala de juntas global" loading="lazy" decoding="async" />
+              </figure>
+              <div class="facility-card__body">
+                <h3 class="facility-card__title">Sala de juntas global</h3>
+                <p class="facility-card__desc">Tecnología de vanguardia para sus reuniones.</p>
+                <span class="facility-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 14a3 3 0 100-6 3 3 0 000 6z"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    />
+                    <path d="M19 12c0 4-3 7-7 7s-7-3-7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                  </svg>
+                </span>
+              </div>
+            </article>
+
+            <article class="facility-card">
+              <figure class="facility-card__media">
+                <img src="./img/aromaymusica.jpeg" alt="Zonas de trabajo ágiles" loading="lazy" decoding="async" />
+              </figure>
+              <div class="facility-card__body">
+                <h3 class="facility-card__title">Zonas de trabajo ágiles</h3>
+                <p class="facility-card__desc">Espacios productivos para cada necesidad.</p>
+                <span class="facility-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18h6M8 10h8l-1 8H9l-1-8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                    <path d="M10 10V8a2 2 0 114 0v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                  </svg>
+                </span>
+              </div>
+            </article>
+
+            <article class="facility-card">
+              <figure class="facility-card__media">
+                <img src="./img/empleados.jpeg" alt="Atención especializada" loading="lazy" decoding="async" />
+              </figure>
+              <div class="facility-card__body">
+                <h3 class="facility-card__title">Atención especializada</h3>
+                <p class="facility-card__desc">Enfoque y asesoría personalizada.</p>
+                <span class="facility-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 11a3 3 0 116 0v1H8v-1zM14 15v2M10 15v2"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    />
+                    <path d="M4 20h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                  </svg>
+                </span>
+              </div>
+            </article>
+
+            <article class="facility-card">
+              <figure class="facility-card__media">
+                <img src="./img/uniformesdelpersonal.jpeg" alt="Nuestra gala de equipo" loading="lazy" decoding="async" />
+              </figure>
+              <div class="facility-card__body">
+                <h3 class="facility-card__title">Nuestra gala de equipo</h3>
+                <p class="facility-card__desc">La presencia y profesionalismo que nos define.</p>
+                <span class="facility-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6 10l2-4h8l2 4v9a2 2 0 01-2 2H8a2 2 0 01-2-2v-9z"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                    <path d="M9 14h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                  </svg>
+                </span>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="hero" id="inicio">
         <div class="container hero-inner">
-          <div class="hero-layout">
-            <div class="hero-title-row animate__animated animate__fadeInUp">
-              <img
-                class="hero-main-logo"
-                src="./img/image.png"
-                alt="Logo de Empresa Soluciones S.A."
-              />
-              <h1>Nuestra Identidad Corporativa</h1>
-            </div>
-            <figure class="hero-side-visual">
-              <img
-                src="./img/tariff.jpeg"
-                alt="Instalaciones y ambiente corporativo"
-                width="520"
-                height="340"
-                loading="lazy"
-                decoding="async"
-              />
-            </figure>
+          <div class="hero-title-row animate__animated animate__fadeInUp">
+            <img
+              class="hero-main-logo"
+              src="./img/image.png"
+              alt="Logo de Empresa Soluciones S.A."
+            />
+            <h1>Nuestra Identidad Corporativa</h1>
           </div>
         </div>
       </section>
